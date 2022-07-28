@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  CSS  --------------------->
+    <link rel="stylesheet" href="style.css">
+    <title>Source Code Of Display Time & Date On Website</title>
+    <!---------------  IONICONS  --------------------->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body onload="initliveClock()">
+   <div class="container">
+    <div class="left_div">
+    <!---------------  Dynamic Greetings  --------------------->
+    <div class="greetings">
+        <h1 id="greetings">Demo Text</h1>
+    </div>
+    <!--------------- End Dynamic Greetings  --------------------->
+    <!---------------  clock  --------------------->
+    <div class="clock">
+        <div class="hour">
+            <div class="hh" id="hh"></div>
+        </div>
+        <div class="min">
+            <div class="mm" id="mm"></div>
+        </div>
+        <div class="sec">
+            <div class="ss" id="ss"></div>
+        </div>
+    </div>
+    <!--------------- End clock  --------------------->
+    <!---------------  Day & Date  --------------------->
+    <div class="showdatetime" >
+        <div class="date">
+            <span id="day">Day</span>,
+            <span id="month">Month</span>
+            <span id="date">00</span>,
+            <span id="year">Year</span>
+        </div>
+        <div class="time">
+            <span id="hour">00</span>:
+            <span id="minutes">00</span>:
+            <span id="seconds">00</span>
+            <span id="period">AM</span>
+        </div>
+    </div>
+    <!--------------- End Day & Date  --------------------->
+    </div>
+    <div class="right_div">
+    <!--------------- Quote  --------------------->  
+    <div class="quote"> 
+        <h2>TODAY'S QUOTES</h2>
+        <p id="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, rem.</p>
+        <h3 id="author">Lorem, ipsum.</h3>
+        <button id="btn">Get Quote</button>
+    </div>     
+    <!--------------- End Quote  --------------------->       
+    </div>
+   </div>
+   <!---------------  SCRIPT  --------------------->
+   <script src="script.js"></script>  
+</body>   
+</html>
